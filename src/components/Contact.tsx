@@ -39,31 +39,38 @@ const Contact = () => {
               className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
               type="text"
               placeholder="First Name"
+              name="firstName"
             />
             <input
               className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
               placeholder="Last Name"
               type="text"
+              name="lastName"
             />
             <input
               className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
               placeholder="Email"
               type="email"
+              name="email"
             />
             <input
               className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400"
               placeholder="Phone"
-              type="phone"
+              type="text"
               maxLength={10}
+              name="phone"
             />
           </div>
           <textarea
             className="bg-black/70 rounded-xl p-3 focus:outline-none focus:ring-2 focus:ring-orange-400 w-full"
             placeholder="Your Message"
-          />
+            name="message"
+          ></textarea>
 
-          <button className="bg-range-700 hover:bg-orange-500 text-white px-6 py-2 w-full font-semibold text-xl rounded-xl">
-            {" "}
+          <button
+            className="bg-orange-700 hover:bg-orange-500 text-white px-6 py-2 w-full font-semibold text-xl rounded-xl"
+            type="submit"
+          >
             Send Message
           </button>
         </form>
