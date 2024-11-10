@@ -2,6 +2,8 @@
 import Image from "next/image";
 import project from "../assets/proj1.jpg";
 import project1 from "../assets/proj2.jpg";
+import project2 from "../assets/proj3.png";
+
 import pc from "../assets/pc.png";
 import card from "../assets/card.png";
 import finance from "../assets/finance.png";
@@ -26,12 +28,12 @@ const projects = [
     src: project,
   },
   {
-    title: "Project1 ",
-    description: " poiuytredcfvghjkl,mnbvcxc ",
-    link: "#",
-    git: "#",
-    devStack: "MongoDB,Expresss, React, Node JS",
-    src: project1,
+    title: "Family Golf",
+    description: "It is a practice dummy project",
+    link: "https://practse-project-1.vercel.app/",
+    git: "https://github.com/Arjunbr121/Practse-project-1.git",
+    devStack: "HTML, CSS, JS",
+    src: project2,
   },
 ];
 
