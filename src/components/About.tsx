@@ -23,8 +23,11 @@ const About = () => {
           <div className="flex lex-row p-6">
             <Image src={book} alt="book" className="w-auto h-[130px]" />
             <div className="flex flex-col mt-6">
-              <h2 className="text-2xl font-bold text-white/80 ">XXXX</h2>
-              <p className="text-lg mt-2 text-white/70 ">XXXX</p>
+              <h2 className="text-2xl font-bold text-white/80 ">Education</h2>
+              <p className="text-lg mt-2 text-white/70 ">
+                I hold a degree in Information Science Engineering and I am
+                focusing on technologies like React, Next.js, and Tailwind CSS.
+              </p>
             </div>
           </div>
         </div>
@@ -33,10 +36,14 @@ const About = () => {
             {" "}
           </div>
           <div className="flex lex-row p-6">
-            <Image src={pc} alt="book" className="w-auto h-[130px]" />
+            <Image src={finance} alt="book" className="w-auto h-[130px]" />
             <div className="flex flex-col mt-6">
-              <h2 className="text-2xl font-bold text-white/80 ">XXXX</h2>
-              <p className="text-lg mt-2 text-white/70 ">XXXX</p>
+              <h2 className="text-2xl font-bold text-white/80 ">
+                Problem Solving
+              </h2>
+              <p className="text-lg mt-2 text-white/70 ">
+                I approach problems with a logical and systematic approach
+              </p>
             </div>
           </div>
         </div>
@@ -47,8 +54,10 @@ const About = () => {
           <div className="flex lex-row p-6">
             <Image src={card} alt="book" className="w-auto h-[130px]" />
             <div className="flex flex-col mt-6">
-              <h2 className="text-2xl font-bold text-white/80 ">XXXX</h2>
-              <p className="text-lg mt-2 text-white/70 ">XXXX</p>
+              <h2 className="text-2xl font-bold text-white/80 ">Experience</h2>
+              <p className="text-lg mt-2 text-white/70 ">
+                I have a diverse portfolio of projects
+              </p>
             </div>
           </div>
         </div>
@@ -57,10 +66,15 @@ const About = () => {
             {" "}
           </div>
           <div className="flex lex-row p-6">
-            <Image src={finance} alt="book" className="w-auto h-[130px]" />
+            <Image src={pc} alt="pc" className="w-auto h-[130px]" />
             <div className="flex flex-col mt-6">
-              <h2 className="text-2xl font-bold text-white/80 ">XXXX</h2>
-              <p className="text-lg mt-2 text-white/70 ">XXXX</p>
+              <h2 className="text-2xl font-bold text-white/80 ">
+                Technical Skills
+              </h2>
+              <p className="text-lg mt-2 text-white/70 ">
+                As a full stack web developer, I specialize in React JS, Next
+                JS, and Tailwind CSS.
+              </p>
             </div>
           </div>
         </div>

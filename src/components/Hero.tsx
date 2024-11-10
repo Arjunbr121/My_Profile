@@ -45,7 +45,7 @@ const Hero = () => {
 
   useEffect(() => {
     const currentPhrase = phrases[currentPhraseIndex];
-    const typingSpeed = isDeleting ? 10 : 50;
+    const typingSpeed = isDeleting ? 150 : 100; // Slower typing speed for both typing and deleting
 
     const handleTyping = () => {
       setDisplayText((prevText) =>
