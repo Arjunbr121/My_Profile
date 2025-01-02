@@ -6,7 +6,9 @@ import {
   FaReact,
   FaJsSquare,
   FaPython,
+  FaNodeJs,
 } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
 
 const skillIcons = [
   { icon: <FaHtml5 size={140} />, label: "HTML" },
@@ -14,6 +16,7 @@ const skillIcons = [
   { icon: <FaReact size={140} />, label: "React" },
   { icon: <FaJsSquare size={140} />, label: "Java Script" },
   { icon: <FaPython size={140} />, label: "Python" },
+  { icon: <TbBrandNextjs size={140} />, label: "Next.js" },
 ];
 
 const Skils = () => {
