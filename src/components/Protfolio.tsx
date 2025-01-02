@@ -1,31 +1,27 @@
 "use client";
 import Image from "next/image";
 import project from "../assets/proj1.jpg";
-import project1 from "../assets/proj2.jpg";
 import project2 from "../assets/proj3.png";
+import project1 from "../assets/project1.png";
+import project3 from "../assets/project3.png";
 
-import pc from "../assets/pc.png";
-import card from "../assets/card.png";
-import finance from "../assets/finance.png";
-
-import { useState } from "react";
 import { motion } from "framer-motion";
 const projects = [
   {
-    title: "Project1 ",
-    description: " poiuytredcfvghjkl,mnbvcxc ",
+    title: "Tomato ",
+    description: " A clone of Zomato A personal Project",
     link: "#",
     git: "#",
-    src: project,
-    devStack: "MongoDB,Expresss, React, Node JS",
+    src: project1,
+    devStack: "MongoDB,Express, React, Node JS",
   },
   {
-    title: "Project1 ",
-    description: " poiuytredcfvghjkl,mnbvcxc ",
-    link: "#",
-    git: "#",
-    devStack: "MongoDB,Expresss, React, Node JS",
-    src: project,
+    title: "Secretly Said ",
+    description: "A private space for users to express thoughts and emotions.",
+    link: "https://secretly-said-deb4.vercel.app/",
+    git: "https://github.com/Arjunbr121/secretly_said",
+    devStack: "NexJs,Tailwind",
+    src: project3,
   },
   {
     title: "Family Golf",
@@ -78,7 +74,7 @@ const Protfolio = () => {
               <Image
                 src={project.src}
                 alt={project.title}
-                className="h-[250px] md:h-[350px] w-[550px] object-cover border rounded border-gray-700"
+                className="h-[250px] md:h-[350px] w-full md:max-w-[600px] object-cover border rounded border-gray-700"
               />
             </div>
           </motion.div>
