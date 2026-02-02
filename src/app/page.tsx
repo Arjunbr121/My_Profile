@@ -13,6 +13,8 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
+  const [showScrollToTop, setShowScrollToTop] = useState(true);
+
 
   useEffect(() => {
     // Simulate loading time
@@ -23,6 +25,9 @@ const Home = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  console.log({showScrollToTop});
+  
+
   return (
     <>
       <AnimatePresence mode="wait">
@@ -30,14 +35,16 @@ const Home = () => {
           <Loading key="loading" />
         ) : (
           <div key="content">
-            <Navbar />
+            <Navbar setShowScrollToTop={setShowScrollToTop} />
             <Hero />
             <About />
             <Protfolio />
             <Skils />
             <Contact />
             <Footer />
+            {showScrollToTop && 
             <ScrollToTop />
+            }
           </div>
         )}
       </AnimatePresence>

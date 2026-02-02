@@ -11,7 +11,7 @@ const navLinks = [
   { title: "contact", path: "#contact", command: "mail --to arjun" },
 ];
 
-const Navbar = () => {
+const Navbar = ({ setShowScrollToTop }: { setShowScrollToTop: (show: boolean) => void }) => {
   const [nav, setNav] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -26,10 +26,12 @@ const Navbar = () => {
 
   const toggleNav = () => {
     setNav(!nav);
+    setShowScrollToTop(false);
   };
 
   const closeNav = () => {
     setNav(false);
+    setShowScrollToTop(true);
   };
 
   return (
